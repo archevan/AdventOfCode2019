@@ -47,6 +47,7 @@ void loadOpcodes(vector<int>& memory) {
 	}
 }
 
+// execute instructions currently in memory
 void execute(vector<int>& memory) {
 	for (int code = 0; code < memory.size(); code += 4) {
 		// break out instruction components
